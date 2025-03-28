@@ -1,0 +1,101 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2024.6" exportTime="Sun Jul 07 09:03:00 BDT 2024">
+  <item>
+    <time>Sun Jul 07 09:00:55 BDT 2024</time>
+    <url><![CDATA[https://feapi.gamius88.com/api/affiliate/apply/agent]]></url>
+    <host ip="172.67.197.101">feapi.gamius88.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/api/affiliate/apply/agent]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /api/affiliate/apply/agent HTTP/2
+Host: feapi.gamius88.com
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.9
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZmVhcGkuZ2FtaXVzODguY29tL2FwaS90b2tlbiIsImlhdCI6MTcyMDMxNTAxNywiZXhwIjoxNzIwMzI1ODE3LCJuYmYiOjE3MjAzMTUwMTcsImp0aSI6IkhGaFZLd0lUTlV5eFNvVU8iLCJzdWIiOjE2MjIsInBydiI6ImRjYjM1MTI3MTk1NzJlYjY5NTIxZThiMTI2MjU4MGIxMTY0MGJiZTMifQ.a3QVbgku9hNkuxn-1-EgwVcFQJmYQFl2ubIx3-GGZ00
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+Content-Type: application/json
+Origin: https://bdt.gamius88.com
+Priority: u=1, i
+Referer: https://bdt.gamius88.com/
+Sec-Ch-Ua: "Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "/Windows/"
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Content-Length: 306
+
+{
+  "agent_id": "testAdminGM",
+  "password": "840600",
+  "real_name": "tstng agnt",
+  "email": "tstng88@gmail.com",
+  "mobile": "1671111111",
+  "commission_payout": 2,
+  "wallet_mobile": "123216548",
+  "nid_number": "37741676821",
+  "date_of_birth": "2000-01-01 08:48:38",
+  "currency": "BDT"
+}
+
+]]></request>
+    <status>400</status>
+    <responselength>805</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/2 400 Bad Request
+Date: Sun, 07 Jul 2024 03:00:56 GMT
+Content-Type: application/json
+X-Powered-By: PHP/7.4.33
+Cache-Control: private, must-revalidate
+Access-Control-Allow-Origin: https://bdt.gamius88.com
+Vary: Origin
+Pragma: no-cache
+Expires: -1
+Cf-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ae6BEGahbNXaxkp8HSZ8lfGPW95VoEoUl%2BMm%2FdysDq9vLJUMfJOnazHbK3Ipao71WFIyJYbcN2mx0xcImnEDq9S4ipL2savfDxKeLdLfIbY1LnNQ7s%2BMMeUX12xVF3VB6qYevO4%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+Cf-Ray: 89f4964e9ce13fee-SIN
+Alt-Svc: h3=":443"; ma=86400
+
+{"success":false,"code":"8.1.0","error":"Agent ID is pending to approve. Please change to another username"}]]></response>
+    <comment><![CDATA[{
+  "agent_id": "AdminGMS",
+  "password": "840600",
+  "real_name": "Gms agnt",
+  "email": "hckrxyzz@gmail.com",
+  "mobile": "1676823770",
+  "commission_payout": 2,
+  "wallet_mobile": "1923456900",
+  "nid_number": "37741676821",
+  "date_of_birth": "2024-07-07 08:48:38",
+  "currency": "BDT"
+}]]></comment>
+  </item>
+</items>
